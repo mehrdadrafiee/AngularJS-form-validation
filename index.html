@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>AngulaJS Form Validation</title>
@@ -9,19 +9,20 @@
   </head>
   <body>
     <div class="page">
-      <section class="card register">
-        <form name="myform">
+      <section class="card register" ng-app>
+        <form name="myform" novalidate>
 
           <div class="textintro">
             <h1>Form Validation</h1>
             <p>Please fill out the following form.</p>
+            <p>{{ user }}</p>
           </div>
 
           <fieldset>
-            <input class="input-lg" type="text" name="firstname" placeholder="First Name">
-            <input class="input-lg" type="text" name="lastname" placeholder="Last Name">
-            <input class="input-lg" type="text" name="email" placeholder="Email">
-            <input class="input-lg" type="text" name="password" placeholder="Password">
+            <input class="input-lg" type="text" name="firstname" placeholder="First Name" ng-model="user.firstname">
+            <input class="input-lg" type="text" name="lastname" placeholder="Last Name" ng-model="user.lastname">
+            <input class="input-lg" type="text" name="email" placeholder="Email" ng-model="user.email">
+            <input class="input-lg" type="text" name="password" placeholder="Password" ng-model="user.password">
           </fieldset>
 
           <button class="btn btn-primary">Submit</button>
