@@ -5,32 +5,31 @@
     <title>AngulaJS Form Validation</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <form>
-      <div class="row">
-        <div class="six columns">
-          <label for="exampleEmailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-        </div>
-        <div class="six columns">
-          <label for="exampleRecipientInput">Reason for contacting</label>
-          <select class="u-full-width" id="exampleRecipientInput">
-            <option value="Option 1">Questions</option>
-            <option value="Option 2">Admiration</option>
-            <option value="Option 3">Can I get your number?</option>
-          </select>
-        </div>
-      </div>
-      <label for="exampleMessage">Message</label>
-      <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-      <label class="example-send-yourself-copy">
-        <input type="checkbox">
-        <span class="label-body">Send a copy to yourself</span>
-      </label>
-      <input class="button-primary" type="submit" value="Submit">
-    </form>
+    <div class="page">
+      <section class="card register">
+        <form name="myform">
+
+          <div class="textintro">
+            <h1>Form Validation</h1>
+            <p>Please fill out the following form.</p>
+          </div>
+
+          <fieldset>
+            <input class="input-lg" type="text" name="firstname" placeholder="First Name">
+            <input class="input-lg" type="text" name="lastname" placeholder="Last Name">
+            <input class="input-lg" type="text" name="email" placeholder="Email">
+            <input class="input-lg" type="text" name="password" placeholder="Password">
+          </fieldset>
+
+          <button class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script sre="js/script.js"></script>
   </body>
 </html>
